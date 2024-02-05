@@ -1,0 +1,25 @@
+Projectiles: {
+	DarkPRT.DisplayName: Dark P R T
+	PRTCristal.DisplayName: P R T Cristal
+}
+
+Items: {
+	EspadaTutorial: {
+		Tooltip: ""
+		DisplayName: Espada Tutorial
+	}
+
+	LibroTutorial: {
+		DisplayName: Libro Tutorial
+		Tooltip: ""
+	}
+}
+
+opia: {
+	Items: {
+		ExampleMagicWeapon: {
+			DisplayName: Example Magic Weapon
+			Tooltip: ""
+		}
+	}
+}

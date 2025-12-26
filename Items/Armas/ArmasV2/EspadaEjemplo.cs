@@ -22,7 +22,7 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las 
 			Item.DamageType = DamageClass.Melee; //¿Qué clase de daño es? Melee, Mago, Rango, Invocador.
 			Item.damage = 200; //¿Cuánto daño base debe hacer tu arma?
 			Item.useTime = 15; //¿Qué tan rápida debe ser tu arma? Entre más alto el numero, más lenta será.
-			Item.knockBack = 6; //¿Qué tanto retroceso debe aplicar tu arma? (Knockback = Retroceso). Entre más alto el valor, más retroceso hará.
+			Item.knockBack = 6f; //¿Qué tanto retroceso debe aplicar tu arma? (Knockback = Retroceso). Entre más alto el valor, más retroceso hará.
 			Item.autoReuse = true; //¿Deberías poder usar la espada manteniendo apretado el click sin soltarlo? Si esta en 'false', cada vez que quieras atacar deberas dar 1 click. 
 
 			Item.value = 100; //¿Cuántas monedas de cobre base debería venderse tu espada a un  NPC?
@@ -34,6 +34,7 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las 
 
 			Item.height = 40; //El alto de tu arma (px). Recomendado mantener los valores igual a los de tu textura.
 			Item.width = 40; //El ancho de tu arma (px). Recomendado mantener los valores igual a los de tu textura.
+			Item.scale = 1f; //Una escala que cambia el tamaño de tu arma al usarse en el juego. 	
 		}
 
 		public override void AddRecipes() //Añadele una receta (crafteo) a tu arma.
@@ -55,3 +56,4 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las 
 }
 
 //Recuerda que cualquier ID para las lineas de codigo pueden ser obtenidas en la wiki de terraria (IDs de objetos,tiles, animaciones, etc.)
+

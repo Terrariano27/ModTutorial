@@ -1,18 +1,18 @@
-//Que librerias usa. De donde se sacará información para este archivo de código.
+//Que librerias usa. De donde se sacarÃ¡ informaciÃ³n para este archivo de cÃ³digo.
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las carpetas del mod? Recuerda actualizarlo si cambias de ubicacion o copias el codigo.
+namespace ModTutorial.Items.Armas.ArmasV2 //Â¿Donde esta ubicado tu item en las carpetas del mod? Recuerda actualizarlo si cambias de ubicacion o copias el codigo.
 {
-	public class MagoEjemplo : ModItem //Registra tu arma en el código.
+	public class MagoEjemplo : ModItem //Registra tu arma en el cÃ³digo.
 	{
 		public override void SetStaticDefaults()
 		{
-            // DisplayName.SetDefault("Tu nombre aquí"); // Por defecto, las letras mayusculas en los nombres dentro del código (linea 8) agregaran espacios al nombre a mostrar (Ej: EspadaLocaWaWo -> Espada Loca Wa Wo. 
+            // DisplayName.SetDefault("Tu nombre aquÃ­"); // Por defecto, las letras mayusculas en los nombres dentro del cÃ³digo (linea 8) agregaran espacios al nombre a mostrar (Ej: EspadaLocaWaWo -> Espada Loca Wa Wo. 
             // Puedes poner un nombre a mostrar diferente si gustas, quitando los primeros "//" de la linea 12 y cambiando el nombre como te guste.
-            // Tooltip.SetDefault("Tu descripción aquí");
-            // Si deseas añadirle una descripción al objeto, puedes hacerlo quitando los primeros "//" de la linea 14 y cambiando la descripción como te guste.
+            // Tooltip.SetDefault("Tu descripciÃ³n aquÃ­");
+            // Si deseas aÃ±adirle una descripciÃ³n al objeto, puedes hacerlo quitando los primeros "//" de la linea 14 y cambiando la descripciÃ³n como te guste.
             // Recuerda en estos casos siempre dejar las comillas ""
         }
 /* NOTA IMPORTANTE!
@@ -21,39 +21,40 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las c
         public override void SetDefaults()
 		{
 
-            Item.damage = 30;  //¿Cuánto daño base debe hacer tu arma?
-            Item.knockBack = 7; //¿Qué tanto retroceso debe aplicar tu arma? (Knockback = Retroceso). Entre más alto el valor, más retroceso hará.
-            Item.shoot = ProjectileID.WoodenBoomerang; //¿Qué Proyectil debería lanzar el item al usarse? 
-            Item.shootSpeed = 5; //¿Con qué velocidad deberia ser lanzado el Proyectil?
-            Item.DamageType = DamageClass.Magic; //¿Qué clase de daño es? Melee, Mago, Rango, Invocador.
-            Item.useTime = 15; //¿Qué tan rápida debe ser tu arma? Entre más alto el numero, más lenta será.
-            Item.autoReuse = true; //¿Deberías poder usar el arma manteniendo apretado el click sin soltarlo? Si esta en 'false', cada vez que quieras atacar deberas dar 1 click. 
-            Item.noMelee = true; //Si se establece como verdadero, la arma no actuara como espada y no hará daño al usar la animación.
-            Item.mana = 10; //¿Cuanta maná base gasta tu item al usarse?
+            Item.damage = 30;  //Â¿CuÃ¡nto daÃ±o base debe hacer tu arma?
+            Item.knockBack = 7f; //Â¿QuÃ© tanto retroceso debe aplicar tu arma? (Knockback = Retroceso). Entre mÃ¡s alto el valor, mÃ¡s retroceso harÃ¡.
+            Item.shoot = ProjectileID.WoodenBoomerang; //Â¿QuÃ© Proyectil deberÃ­a lanzar el item al usarse? 
+            Item.shootSpeed = 5; //Â¿Con quÃ© velocidad deberia ser lanzado el Proyectil?
+            Item.DamageType = DamageClass.Magic; //Â¿QuÃ© clase de daÃ±o es? Melee, Mago, Rango, Invocador.
+            Item.useTime = 15; //Â¿QuÃ© tan rÃ¡pida debe ser tu arma? Entre mÃ¡s alto el numero, mÃ¡s lenta serÃ¡.
+            Item.autoReuse = true; //Â¿DeberÃ­as poder usar el arma manteniendo apretado el click sin soltarlo? Si esta en 'false', cada vez que quieras atacar deberas dar 1 click. 
+            Item.noMelee = true; //Si se establece como verdadero, la arma no actuara como espada y no harÃ¡ daÃ±o al usar la animaciÃ³n.
+            Item.mana = 10; //Â¿Cuanta manÃ¡ base gasta tu item al usarse?
 
-            Item.rare = ItemRarityID.LightRed; //¿Qué rareza debería llevar tu arma? (Legendario, experto, raro,común,basura,  etc.)
-            Item.value = 500; //¿Cuántas monedas de cobre base debería venderse tu espada a un  NPC? 
+            Item.rare = ItemRarityID.LightRed; //Â¿QuÃ© rareza deberÃ­a llevar tu arma? (Legendario, experto, raro,comÃºn,basura,  etc.)
+            Item.value = 500; //Â¿CuÃ¡ntas monedas de cobre base deberÃ­a venderse tu espada a un  NPC? 
 
-            Item.UseSound = SoundID.Item43; //¿Qué sonido debería hacer tu arma al usarse?
-            Item.useStyle = ItemUseStyleID.Shoot; //¿Qué animación usa tu arma? Obtenida de las ya existentes en el juego
-            Item.useAnimation = 15; //¿Cuánto tarda en hacer su animación de ataque tu arma?  Este es independiente a la velocdad de ataque y puede ser diferente valor.
+            Item.UseSound = SoundID.Item43; //Â¿QuÃ© sonido deberÃ­a hacer tu arma al usarse?
+            Item.useStyle = ItemUseStyleID.Shoot; //Â¿QuÃ© animaciÃ³n usa tu arma? Obtenida de las ya existentes en el juego
+            Item.useAnimation = 15; //Â¿CuÃ¡nto tarda en hacer su animaciÃ³n de ataque tu arma?  Este es independiente a la velocdad de ataque y puede ser diferente valor.
 
             Item.width = 34; //El ancho de tu arma (px). Recomendado mantener los valores igual a los de tu textura.
             Item.height = 40; //El alto de tu arma (px). Recomendado mantener los valores igual a los de tu textura.
-
+			Item.scale = 1f; //Una escala que cambia el tamaÃ±o de tu arma al usarse en el juego. 	
 
         }
 
 
-        public override void AddRecipes() //Añadele una receta (crafteo) a tu arma.
+        public override void AddRecipes() //AÃ±adele una receta (crafteo) a tu arma.
         {
 			Recipe recipe = CreateRecipe(); //Crea la receta
             recipe.AddIngredient(ItemID.WoodenBoomerang, 2);//Usa 2 boomerang de madera para craftear
             recipe.AddIngredient(ItemID.Book, 1); // Usa 1 libro para craftear
-            recipe.AddTile(TileID.LunarCraftingStation); //En que estación de crafteo se debe hacer. En este caso, la estacion de los pilares/moonlord.
-                                                         //Si no quieres que sea necesario una estación de crafteo para craftear esta arma, elimina la linea anterior.
+            recipe.AddTile(TileID.LunarCraftingStation); //En que estaciÃ³n de crafteo se debe hacer. En este caso, la estacion de los pilares/moonlord.
+                                                         //Si no quieres que sea necesario una estaciÃ³n de crafteo para craftear esta arma, elimina la linea anterior.
             recipe.Register(); //Guarda esta receta para que funcione.
         }
 	}
 }
+
 //Recuerda que cualquier ID para las lineas de codigo pueden ser obtenidas en la wiki de terraria (IDs de objetos,tiles, animaciones, etc.)

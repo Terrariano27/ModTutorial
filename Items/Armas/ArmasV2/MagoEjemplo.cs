@@ -15,9 +15,7 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las 
             // Si deseas añadirle una descripción al objeto, puedes hacerlo quitando los primeros "//" de la linea 14 y cambiando la descripción como te guste.
             // Recuerda en estos casos siempre dejar las comillas ""
         }
-/* NOTA IMPORTANTE!
- * Poner en este codigo un proyectil vanilla para no irse mucho dentro del codigo custom.
- */
+
         public override void SetDefaults()
 		{
 
@@ -58,3 +56,4 @@ namespace ModTutorial.Items.Armas.ArmasV2 //¿Donde esta ubicado tu item en las 
 }
 
 //Recuerda que cualquier ID para las lineas de codigo pueden ser obtenidas en la wiki de terraria (IDs de objetos,tiles, animaciones, etc.)
+
